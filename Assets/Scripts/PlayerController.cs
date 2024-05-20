@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
         levelManagerObject = GameObject.Find("LevelManager");
         engineFlame = transform.Find("EngineFlame").gameObject;
         engineSound = transform.Find("EngineSound").gameObject;
-        shieldSphere = transform.Find("ShieldSphere").gameObject;
+        shieldSphere = transform.Find("EngineSphere").gameObject;
     }
 
     // Update is called once per frame
@@ -83,12 +83,14 @@ public class PlayerController : MonoBehaviour
         //zaktualizuj interfejs
         UpdateUI();
     }
+
     private void UpdateUI()
     {
         //metoda wykonuje wszystko zwi¹zane z aktualizacj¹ interfejsu u¿ytkownika
 
         //wyciagnij z menadzera poziomu pozycje wyjscia
-        Vector3 target = levelManagerObject.GetComponent<LevelManager>().exitPosition;
+        Vector3 exitPosition = levelManagerObject.GetComponent<LevelManager>().exitPosition;
+        Vector3 target = exitPosition;
         //obroc znacznik w strone wyjscia
         transform.Find("NavUI").Find("TargetMarket").LookAt(target);
         //zmien ilosc procentwo widoczna w interfejsie

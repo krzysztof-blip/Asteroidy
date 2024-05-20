@@ -40,7 +40,7 @@ public class AsteroidGenerator : MonoBehaviour
         rotation.x = Random.value;
         rotation.y = Random.value;
         rotation.z = Random.value;
-        rotation *= Random.Range(10, 20);
+        rotation *= Random.Range(15, 25);
     }
 
     // Update is called once per frame

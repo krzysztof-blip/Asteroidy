@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6632174402503296990}
   - component: {fileID: 3214929734248913914}
   - component: {fileID: 4634145226951579057}
+  - component: {fileID: 6372802573286087912}
   m_Layer: 0
   m_Name: DynamicAsteroid
   m_TagString: Asteroid
@@ -30,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5438472734017940815}
@@ -56,7 +57,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5809861381376706115}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 0.1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -105,7 +106,7 @@ MeshRenderer:
   m_GameObject: {fileID: 5809861381376706115}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -140,6 +141,14 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &6372802573286087912
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5809861381376706115}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1936755489322675162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -192,7 +201,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1003070598645397747, guid: 7e918a7f731102941821c33449f2081a, type: 3}
+    - {fileID: 6818274279310346790, guid: 7e918a7f731102941821c33449f2081a, type: 3}
+    - {fileID: 1737865953540858831, guid: 7e918a7f731102941821c33449f2081a, type: 3}
+    - {fileID: 6317092849244130970, guid: 7e918a7f731102941821c33449f2081a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

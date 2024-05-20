@@ -539,7 +539,7 @@ GameObject:
   - component: {fileID: 1250276311}
   - component: {fileID: 1250276310}
   m_Layer: 0
-  m_Name: LevelManger
+  m_Name: LevelManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -557,7 +557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c30786e46e21a5143876b3b72b18070b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  staticAsteroid: {fileID: 0}
+  staticAsteroid: {fileID: 5809861381376706115, guid: 108c6ee47caf4e34288bcb2f652ab0fd, type: 3}
   spawnDistance: 20
   safeDistance: 5
   cooldown: 2
@@ -1996,7 +1996,7 @@ Skybox:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2108355835}
   m_Enabled: 1
-  m_CustomSkybox: {fileID: 0}
+  m_CustomSkybox: {fileID: 2100000, guid: 860a66ca4259b384f9ec01b687f71c3c, type: 2}
 --- !u!114 &2108355841
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -66,7 +66,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!135 &7341148698774182765
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -86,8 +86,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.84
-  m_Center: {x: 0, y: 0, z: -0.17}
+  m_Radius: 3.52
+  m_Center: {x: 0, y: 0, z: -0.73}
 --- !u!114 &356368022048519165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5263,7 +5263,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
